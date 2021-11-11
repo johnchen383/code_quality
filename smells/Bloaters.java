@@ -2,17 +2,17 @@ package smells;
 
 public class Bloaters {
     /**
-     * Long Method
+     * LONG METHOD
      */
 
     /**
-     * Large Class
+     * LARGE CLASS
      */
 
     /**
-     * Long parameter list
+     * LONG PARAMETER LIST
      */
-    
+
 
     /**
      * PRIMITIVE OBSESSION      "Everything's a primitive"
