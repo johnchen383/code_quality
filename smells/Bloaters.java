@@ -1,9 +1,9 @@
 package smells;
 
 public class Bloaters {
-
     /**
      * PRIMITIVE OBSESSION      "Everything's a primitive"
+     * Refactor: Introduce objects
      */
     public class Person {
         String name;
@@ -23,6 +23,16 @@ public class Bloaters {
         public boolean checkPasswordLength() {
             return password.length() >= 8;
         }
+    }
+
+    /**
+     * DATA CLUMPS          "Repeated passing of clumps of data"
+     * Refactor: Introduce parameter object OR simplifying method calls
+     */
+    public abstract class DataClump{
+        public abstract void connect(String host, int port, String username);
+        public abstract void disconnect(String host, int port, String username);
+        public abstract void checkConnectionStatus(String host, int port, String username);
     }
 }
 
