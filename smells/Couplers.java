@@ -13,7 +13,7 @@ public class Couplers {
 
     /**
      * MIDDLE MAN: Instances of laziness
-     * Refactor: Remove method
+     * Refactor: Remove method or class (Lazy Class)
      */
     public class Student {
         List<Course> enrolledCourses;

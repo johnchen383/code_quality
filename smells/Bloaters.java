@@ -3,14 +3,17 @@ package smells;
 public class Bloaters {
     /**
      * LONG METHOD
+     * Refactor: Extract Method
      */
 
     /**
      * LARGE CLASS
+     * Refactor: Extract Class
      */
 
     /**
      * LONG PARAMETER LIST
+     * Refactor: Replace parameters with method calls, introduce parameter object, preserve whole object
      */
 
 
