@@ -2,6 +2,19 @@ package smells;
 
 public class Bloaters {
     /**
+     * Long Method
+     */
+
+    /**
+     * Large Class
+     */
+
+    /**
+     * Long parameter list
+     */
+    
+
+    /**
      * PRIMITIVE OBSESSION      "Everything's a primitive"
      * Refactor: Introduce objects
      */
