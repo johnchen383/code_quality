@@ -11,8 +11,8 @@ public class Abusers {
      */
 
     /**
-     * SWITCH STATEMENTS "Or very long if statements cause scattering" Refactor:
-     * better OOP, particularly polymorhpism
+     * SWITCH STATEMENTS "Or very long if statements cause scattering"
+     * Refactor: better OOP, particularly polymorhpism
      */
     public class Person{
         int getCoolness(String name) {

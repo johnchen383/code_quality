@@ -4,6 +4,14 @@ import java.util.List;
 
 public class Couplers {
     /**
+     * MESSAGE CHAINS
+     * Refactor: hide delegate or method moving
+     */
+
+    String temp = new Person().getCourse().getSubject();
+    String temp2 = new Person().getCourseSubject();     //hide delegate
+
+    /**
      * MIDDLE MAN: Instances of laziness
      * Refactor: Remove method
      */
@@ -16,10 +24,10 @@ public class Couplers {
         }    
     }
 
-
-
-
-
+    /**
+     * FEATURE ENVY (One envies) + INAPPROPRIATE INTIMACY (Dual): "Interwoven method calling"
+     * Refactor: Move (entire) OR extract (portion) method
+     */
 
 
     /**
@@ -32,11 +40,21 @@ public class Couplers {
     }
 
     class Person {
+        Course course = new Course();
 
+        Course getCourse(){
+            return course;
+        }
+
+        String getCourseSubject(){
+            return course.getSubject();
+        }
     }
 
     class Course {
-    
+        String getSubject(){
+            return "Yeet";
+        }
     }
 }
 
